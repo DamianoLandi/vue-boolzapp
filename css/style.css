@@ -134,7 +134,43 @@ nav{
     overflow-y: scroll;
     background-image: url(../img/mine.jpg);
     background-attachment: fixed;
+    padding: 50px;
 }
+
+.user-message, .contact-message{
+    height: 70px;
+    width: 250px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.contact-message{
+    background-color: #fff;
+}
+
+.user-message{
+    background-color: #D5F9BA;
+    margin-left: 65%;
+}
+
+.user-message p, .contact-message p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sent-time{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: gray;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
 
 .message-input{
     height: 84px;
