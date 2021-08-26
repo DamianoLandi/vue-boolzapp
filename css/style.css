@@ -34,3 +34,33 @@ body{
     color: gray;
     font-size: 25px;
 }
+
+.notifications{
+    background-color: #8EDAFC;
+    height: 12%;
+}
+
+.bell{
+    background-color: #fff;
+    color: #8EDAFC;
+    height: 60%;
+    border-radius: 50%;
+    width: 15%;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.notif-info{
+    height: 60%;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.notif-info p:first-child{
+    font-weight: 500;
+}
+
+.notif-info p:last-child{
+    color: gray;
+    text-decoration: underline;
+}
