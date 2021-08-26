@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(to top,  #D4DBDA 80% , #009688 20%);
+}
+
+#container{
+    height: 100vh;
+}
+
+#container .row{
+    margin-top: 2%;
+    height: 95%;
+    background-color: #fff; /*rimuovere*/
+}
