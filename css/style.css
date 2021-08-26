@@ -1,5 +1,7 @@
 body{
     background: linear-gradient(to top,  #D4DBDA 80% , #009688 20%);
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 #container{
@@ -29,9 +31,13 @@ body{
     font-weight: 400;
 }
 
-.user div:last-child{
-    width: 35%;
-    color: gray;
+.user div{
+    max-height: 100%;
+}
+
+.user-icons{
+    width: 150px;
+    color: #B1B1B1;
     font-size: 25px;
 }
 
@@ -113,5 +119,19 @@ nav{
     margin-left: 15px;
     font-weight: 500;
     font-size: 20px;
+}
 
+.chat-contact p{
+    margin-left: 15px;
+}
+.last-access{
+    color: gray;
+}
+
+.chat-box{
+    max-height: calc(100% - 180px);
+    min-height: calc(100% - 180px);
+    overflow-y: scroll;
+    background-image: url(../img/mine.jpg);
+    background-attachment: fixed;
 }
