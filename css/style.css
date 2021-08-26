@@ -64,3 +64,27 @@ body{
     color: gray;
     text-decoration: underline;
 }
+
+nav{
+    background-color: #EAEAEA;
+    height: 7%;
+}
+
+.navbar{
+    background-color: #fff;
+    border: 1px solid rgb(221, 221, 221);
+    height: 75%;
+    width: 90%;
+    border-radius: 5px;
+}
+
+.navbar i{
+    color: rgb(153, 152, 152);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.navbar input{
+    border-color: transparent;
+    width: 80%;
+}
