@@ -129,9 +129,33 @@ nav{
 }
 
 .chat-box{
-    max-height: calc(100% - 180px);
-    min-height: calc(100% - 180px);
+    max-height: calc(100% - 190px);
+    min-height: calc(100% - 190px);
     overflow-y: scroll;
     background-image: url(../img/mine.jpg);
     background-attachment: fixed;
+}
+
+.message-input{
+    height: 84px;
+    background-color: #EAEAEA;
+    font-size: 25px;
+    color: gray;
+}
+
+.message-input div{
+    width: 10%;
+}
+
+.message-input .keyboard{
+    width: 90%;
+}
+
+.keyboard input{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px;
+    border-color: transparent;
+    font-size: 18px;
+    padding-left: 20px;
 }
