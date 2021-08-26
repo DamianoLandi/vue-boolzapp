@@ -9,5 +9,28 @@ body{
 #container .row{
     margin-top: 2%;
     height: 95%;
-    background-color: #fff; /*rimuovere*/
+    max-height: 95%;
+}
+
+.user{
+    max-height: 10%;
+    background-color: #EAEAEA;
+}
+
+.user img{
+    height: 80%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.user div:first-child{
+    width: 60%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.user div:last-child{
+    width: 35%;
+    color: gray;
+    font-size: 25px;
 }
