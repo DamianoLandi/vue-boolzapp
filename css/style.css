@@ -13,7 +13,7 @@ body{
 }
 
 .user{
-    max-height: 10%;
+    height: 90px;
     background-color: #EAEAEA;
 }
 
@@ -37,7 +37,7 @@ body{
 
 .notifications{
     background-color: #8EDAFC;
-    height: 12%;
+    height: 110px;
 }
 
 .bell{
@@ -67,7 +67,7 @@ body{
 
 nav{
     background-color: #EAEAEA;
-    height: 7%;
+    height: 65px;
 }
 
 .navbar{
@@ -87,4 +87,31 @@ nav{
 .navbar input{
     border-color: transparent;
     width: 80%;
+}
+
+.contacts{
+    min-height: calc(95vh - 265px);
+    max-height: calc(95vh - 265px);
+    overflow-y: scroll;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts li{
+    height: 80px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+
+.contacts img{
+    max-height: 80%;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.contacts span{
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 20px;
+
 }
