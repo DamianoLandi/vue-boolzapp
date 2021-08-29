@@ -40,18 +40,18 @@
                         </div>
                     </nav>
                     <ul class="contacts">
-                        <li class="px-2" v-for="(contact, index) in data.contacts">
+                        <li class="px-2" v-for="(contact, index) in data.contacts" @click="switchChat(index)">
                             <img :src="`./img/avatar${data.contacts[index].avatar}.jpg`" alt="Avatar">
                             <span>{{data.contacts[index].name}}</span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-8 px-0">
-                    <div class="chat-display">
+                    <div class="chat-display" v-for="(contact, index) in data.contacts" v-show="data.contacts[index].visible">
                         <div class="user chat-contact d-flex justify-content-between">
                             <div class="d-flex align-items-center">
-                                <img src="./img/avatar_1.jpg" alt="IO">
-                                <p>Michele <br><span class="last-access">Ultimo accesso oggi alle...</span></p>
+                                <img :src="`./img/avatar${data.contacts[index].avatar}.jpg`" alt="IO">
+                                <p>{{data.contacts[index].name}} <br><span class="last-access">Ultimo accesso oggi alle...</span></p>
                             </div>
                             <div class="user-icons d-flex align-items-center justify-content-around">
                                 <i class="fas fa-search"></i>
