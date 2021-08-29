@@ -142,7 +142,7 @@ nav{
     padding: 50px;
 }
 
-.sent, .recived{
+.sent, .received{
     height: 70px;
     width: 250px;
     border-radius: 10px;
@@ -153,7 +153,7 @@ nav{
     padding-left: 10px;
 }
 
-.recived{
+.received{
     background-color: #fff;
 }
 
@@ -162,7 +162,7 @@ nav{
     margin-left: 65%;
 }
 
-.sent p, .recived p{
+.sent p, .received p{
     font-size: 16px;
     font-weight: 500;
 }

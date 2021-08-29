@@ -60,17 +60,9 @@
                             </div>
                         </div>
                         <div class="chat-box">
-                            <div class="sent">
-                                <p>Hai portato a spasso il cane?</p>
-                                <span class="sent-time">10/01/2020 15:30:55</span>
-                            </div>
-                            <div class="sent">
-                                <p>Ricordati di dargli da mangiare</p>
-                                <span class="sent-time">10/01/2020 15:30:55</span>
-                            </div>
-                            <div class="recived">
-                                <p>Tutto Fatto!</p>
-                                <span class="sent-time">10/01/2020 15:30:55</span>
+                            <div v-for="(mex, i) in data.contacts[index].messages" :class="contact.messages[i].status">
+                                <p>{{data.contacts[index].messages[i].message}}</p>
+                                <span class="sent-time">{{data.contacts[index].messages[i].date}}</span>
                             </div>
                         </div>
                     </div>
