@@ -128,16 +128,21 @@ nav{
     color: gray;
 }
 
+.chat-display{
+    max-height: calc(100% - 100px);
+    min-height: calc(100% - 100px);
+}
+
 .chat-box{
-    max-height: calc(100% - 190px);
-    min-height: calc(100% - 190px);
+    max-height: 717px;
+    min-height: 717px;
     overflow-y: scroll;
     background-image: url(../img/mine.jpg);
     background-attachment: fixed;
     padding: 50px;
 }
 
-.user-message, .contact-message{
+.sent, .recived{
     height: 70px;
     width: 250px;
     border-radius: 10px;
@@ -148,16 +153,16 @@ nav{
     padding-left: 10px;
 }
 
-.contact-message{
+.recived{
     background-color: #fff;
 }
 
-.user-message{
+.sent{
     background-color: #D5F9BA;
     margin-left: 65%;
 }
 
-.user-message p, .contact-message p{
+.sent p, .recived p{
     font-size: 16px;
     font-weight: 500;
 }
