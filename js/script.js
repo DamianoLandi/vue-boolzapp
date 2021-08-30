@@ -26,6 +26,16 @@ const root = new Vue({
             this.data.contacts[i].messages.push(newMessage);
 
             this.newText = "";
+
+            setTimeout(() => {
+                const newRecivedMessage = {
+                    status: 'received',
+                    message: "Ok",
+                    date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+                }
+
+                this.data.contacts[i].messages.push(newRecivedMessage);
+            }, 1000)
         }
     },
 
