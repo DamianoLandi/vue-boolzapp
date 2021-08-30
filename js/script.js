@@ -2,6 +2,7 @@ const root = new Vue({
     el: "#root",
     data:{
         data,
+        newText: "",
     },
     methods:{
         switchChat(i){
@@ -9,6 +10,22 @@ const root = new Vue({
                 this.data.contacts[key].visible = false;
             }
             this.data.contacts[i].visible = true;
+        },
+
+        sendMessage(i){
+            if(!this.newText || !this.newText.trim()){
+                return
+            } 
+
+            const newMessage = {
+                status: 'sent',
+                message: this.newText,
+                date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+            }
+
+            this.data.contacts[i].messages.push(newMessage);
+
+            this.newText = "";
         }
     },
 
