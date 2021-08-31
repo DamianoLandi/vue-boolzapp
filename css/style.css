@@ -144,9 +144,13 @@ li .last-mex-date{
     overflow: hidden;
 }
 
-li.px-2:hover{
+.contacts li:hover{
     background-color: rgb(226, 226, 226);
     cursor: pointer;
+}
+
+.contacts li.px-2.active{
+    background-color: lightgray;
 }
 
 .chat-contact p{
