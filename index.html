@@ -44,6 +44,8 @@
                         <li class="px-2" v-for="(contact, index) in data.contacts" v-if="data.contacts[index].name.toLowerCase().trim().includes(searchContact.toLowerCase().trim())" @click="switchChat(index)">
                             <img :src="`./img/avatar${data.contacts[index].avatar}.jpg`" alt="Avatar">
                             <span>{{data.contacts[index].name}}</span>
+                            <span class="last-mex">{{data.contacts[index].messages[data.contacts[index].messages.length - 1].message}}</span>
+                            <span class="last-mex-date">{{data.contacts[index].messages[data.contacts[index].messages.length - 1].date}}</span>
                         </li>
                     </ul>
                 </div>

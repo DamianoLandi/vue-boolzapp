@@ -107,6 +107,7 @@ nav{
 .contacts li{
     height: 80px;
     border-bottom: 1px solid rgb(241, 241, 241);
+    position: relative;
 }
 
 .contacts img{
@@ -119,6 +120,33 @@ nav{
     margin-left: 15px;
     font-weight: 500;
     font-size: 20px;
+}
+
+li .last-mex{
+    position: absolute;
+    color: rgb(165, 165, 165);
+    width: 60%;
+    font-size: 15px;
+    left: 76px;
+    top: 47px;
+    line-height: 30px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+li .last-mex-date{
+    position: absolute;
+    color: rgb(165, 165, 165);
+    right: 10px;
+    font-size: 12px;
+    line-height: 30px;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+li.px-2:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
 }
 
 .chat-contact p{
