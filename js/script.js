@@ -3,6 +3,7 @@ const root = new Vue({
     data:{
         data,
         newText: "",
+        searchContact: "",
     },
     methods:{
         switchChat(i){
