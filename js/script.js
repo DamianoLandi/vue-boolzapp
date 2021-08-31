@@ -37,6 +37,10 @@ const root = new Vue({
 
                 this.data.contacts[i].messages.push(newRecivedMessage);
             }, 1000)
+        },
+
+        deleteMessage(index, i){
+            this.data.contacts[index].messages.splice(i, 1);
         }
     },
 

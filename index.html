@@ -63,9 +63,10 @@
                             </div>
                         </div>
                         <div class="chat-box">
-                            <div v-for="(mex, i) in data.contacts[index].messages" :class="contact.messages[i].status">
+                            <div class="mex" v-for="(mex, i) in data.contacts[index].messages" :class="contact.messages[i].status">
                                 <p>{{data.contacts[index].messages[i].message}}</p>
                                 <span class="sent-time">{{data.contacts[index].messages[i].date}}</span>
+                                <button class="delete" @click="deleteMessage(index, i)"><i class="fas fa-trash-alt"></i></button>
                             </div>
                         </div>
                         <div class="message-input d-flex">

@@ -232,3 +232,21 @@ li .last-mex-date{
     font-size: 18px;
     padding-left: 20px;
 }
+
+.mex{
+    position: relative;
+}
+
+.delete{
+    position: absolute;
+    background-color: transparent;
+    border-color: transparent;
+    bottom: 3px;
+    left: 3px;
+    color: rgb(156, 156, 156);
+}
+
+.delete:hover{
+    transform: scale(1.2);
+    color: gray;
+}
